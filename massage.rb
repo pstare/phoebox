@@ -101,8 +101,8 @@ class Phoebox
     %Q(Red="#{color.red}" Green="#{color.green}" Blue="#{color.blue}")
   end
 
-  def converted_cue_from(elements, type:)
-    elements.num = -1 unless type == :hotcue
+  def converted_cue_from(e, type:)
+    e.num = -1 unless type == :hotcue
     %Q(#{e.header}Num="#{e.num}" #{color_substring_from(e.color)}#{e.footer})
   end
 
