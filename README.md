@@ -17,9 +17,11 @@ Traktor has several cue types, whereas RekordBox only has two: regular, and loop
 
 Phoebox by default translates load markers (yellow in Traktor) to dark blue, mix-in and mix-out markers (orange in Traktor) to pink, and regular markers (cyan in Traktor) to green, since this is the default RB color.
 
+The mappings can be changed directly in the script.
+
 ## How
 
-Read the `massage.rb` script and make sure the file paths are correct. The script essentially runs on the `rekordbox.xml` file and transforms it, creating a backing to `rekordbox.xml.orig`. Be careful not to run the script twice, as it will continue duplicating cues needlessly and inflating the size of the xml file.
+Read the `massage.rb` script and make sure the file paths are correct. The script essentially runs on the `rekordbox.xml` file and transforms it, creating a backup to `rekordbox.xml.orig`. Be careful not to run the script twice, as it will continue duplicating cues needlessly and inflating the size of the xml file.
 
 Once the script runs, you need to manually refresh the xml file inside Rekordbox, and re-import any playlists it contains, then sync your Rekordbox playlists to your "device", i.e. a USB stick.
 
